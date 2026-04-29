@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prajeeth – Full-Stack Developer & Digital Strategist</title>
+  <meta name="description"
+    content="Prajeeth – A versatile full-stack web developer with 1.5 years of experience offering affordable, high-quality web development, digital marketing, and data analysis solutions." />
+  <!-- Fallback web fonts (used until Merlin font files are added to /fonts/) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- PARTICLES -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-box">P</span>
+        <span class="logo-text">rajeeth</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-nav">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+      <div class="shape s4"></div>
+    </div>
+    <div class="hero-3d-scene">
+      <div class="cube-wrapper">
+        <div class="cube">
+          <div class="cube-face front"></div>
+          <div class="cube-face back"></div>
+          <div class="cube-face left"></div>
+          <div class="cube-face right"></div>
+          <div class="cube-face top"></div>
+          <div class="cube-face bottom"></div>
+        </div>
+      </div>
+      <div class="orbit-ring ring-1">
+        <div class="orbit-dot od1"></div>
+      </div>
+      <div class="orbit-ring ring-2">
+        <div class="orbit-dot od2"></div>
+      </div>
+      <div class="orbit-ring ring-3">
+        <div class="orbit-dot od3"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Available for Freelance Work
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Prajeeth</span>
+        <br /><span class="typed-wrapper">a <span id="typed"></span><span class="typed-cursor">|</span></span>
+      </h1>
+      <p class="hero-sub">Versatile Full-Stack Developer · Digital Marketer · Data Analyst<br />1.5 years of hands-on
+        experience delivering affordable, quality solutions.</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">Explore Services</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="1.5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="20">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="av-card-main">
+            <div class="av-avatar">
+              <div class="av-letter">P</div>
+              <div class="av-glow"></div>
+            </div>
+            <div class="av-info">
+              <strong>Prajeeth</strong>
+              <span>Full-Stack Developer</span>
+            </div>
+            <div class="av-badge">⚡ Open to Work</div>
+          </div>
+          <div class="av-float-card fc1">
+            <span class="fc-icon">🌐</span>
+            <span>Web Development</span>
+          </div>
+          <div class="av-float-card fc2">
+            <span class="fc-icon">📊</span>
+            <span>Data Analysis</span>
+          </div>
+          <div class="av-float-card fc3">
+            <span class="fc-icon">📣</span>
+            <span>Digital Marketing</span>
+          </div>
+          <div class="av-ring r1"></div>
+          <div class="av-ring r2"></div>
+        </div>
+        <div class="about-text reveal-right">
+          <span class="section-tag">About Me</span>
+          <h2>Building <span class="gradient-text">Digital</span> Experiences That Matter</h2>
+          <p>Hi, I'm Prajeeth – a versatile web developer with a strong foundation in both front-end and back-end
+            technologies. With 1.5 years of hands-on experience, I've worked on multiple projects for clients, providing
+            <strong>affordable and quality solutions</strong>.
+          </p>
+          <p>My tech stack includes JavaScript, Python, HTML, CSS, and more. I focus on creating websites that are not
+            only user-friendly and responsive but also tailored to the specific needs of the client.</p>
+          <p>Whether you're looking for a custom-built site, digital marketing services, or data analysis — I'm here to
+            bring your vision to life. I pride myself on delivering results that exceed expectations.</p>
+          <div class="strengths-grid">
+            <div class="strength-item">
+              <span class="si-icon">🎯</span>
+              <div>
+                <strong>Versatility</strong>
+                <p>Web dev, editing, digital marketing & data analysis all under one roof.</p>
+              </div>
+            </div>
+            <div class="strength-item">
+              <span class="si-icon">💰</span>
+              <div>
+                <strong>Affordable</strong>
+                <p>Cost-effective solutions without compromising on quality.</p>
+              </div>
+            </div>
+            <div class="strength-item">
+              <span class="si-icon">⏱️</span>
+              <div>
+                <strong>On Time</strong>
+                <p>Committed to deadlines and ongoing post-delivery support.</p>
+              </div>
+            </div>
+            <div class="strength-item">
+              <span class="si-icon">🔗</span>
+              <div>
+                <strong>Full-Stack</strong>
+                <p>End-to-end development from design to deployment.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary">Work With Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-dark">
+    <div class="services-bg">
+      <div class="sb-blob sb1"></div>
+      <div class="sb-blob sb2"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag light">What I Do</span>
+        <h2>Services I <span class="gradient-text">Offer</span></h2>
+        <p>End-to-end digital solutions tailored for your specific goals and budget.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" style="--delay:0.1s">
+          <div class="sc-icon-wrap" style="--sc:#7c3aed;">
+            <span class="sc-icon">💻</span>
+          </div>
+          <h3>Full-Stack Web Development</h3>
+          <p>Complete front-end & back-end development using modern technologies like JavaScript, Python, HTML, and CSS.
+            From concept to deployment.</p>
+          <ul class="sc-list">
+            <li>Custom web applications</li>
+            <li>REST API development</li>
+            <li>Database integration</li>
+          </ul>
+          <div class="sc-glow"></div>
+        </div>
+        <div class="service-card reveal featured-service" style="--delay:0.2s">
+          <div class="sc-badge">Most Popular</div>
+          <div class="sc-icon-wrap" style="--sc:#0ea5e9;">
+            <span class="sc-icon">📱</span>
+          </div>
+          <h3>Responsive Web Design</h3>
+          <p>Pixel-perfect, mobile-first designs that look stunning on every device. Fast, accessible, and SEO-ready
+            from the ground up.</p>
+          <ul class="sc-list">
+            <li>Mobile-first approach</li>
+            <li>Cross-browser compatibility</li>
+            <li>Performance optimized</li>
+          </ul>
+          <div class="sc-glow"></div>
+        </div>
+        <div class="service-card reveal" style="--delay:0.3s">
+          <div class="sc-icon-wrap" style="--sc:#10b981;">
+            <span class="sc-icon">📣</span>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Strategic online marketing to grow your brand, attract leads, and convert visitors into loyal customers
+            through data-driven strategies.</p>
+          <ul class="sc-list">
+            <li>SEO & content strategy</li>
+            <li>Social media management</li>
+            <li>Campaign analytics</li>
+          </ul>
+          <div class="sc-glow"></div>
+        </div>
+        <div class="service-card reveal" style="--delay:0.4s">
+          <div class="sc-icon-wrap" style="--sc:#f59e0b;">
+            <span class="sc-icon">📊</span>
+          </div>
+          <h3>Data Analysis & Insights</h3>
+          <p>Transform raw data into actionable business insights using Python and data visualization tools to drive
+            informed decision-making.</p>
+          <ul class="sc-list">
+            <li>Data cleaning & processing</li>
+            <li>Visual dashboards</li>
+            <li>Business intelligence reports</li>
+          </ul>
+          <div class="sc-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Tech Stack</span>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <p>Technologies and tools I work with to build powerful digital solutions.</p>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-bars reveal-left">
+          <div class="skill-row">
+            <div class="skill-meta"><span>JavaScript</span><span>90%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:90%;--sc:#f7df1e;"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta"><span>Python</span><span>85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:85%;--sc:#3776ab;"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta"><span>HTML & CSS</span><span>95%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:95%;--sc:#e44d26;"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta"><span>React.js</span><span>75%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:75%;--sc:#61dafb;"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta"><span>Django / Flask</span><span>78%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:78%;--sc:#0d9488;"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta"><span>Data Analysis</span><span>80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:80%;--sc:#f59e0b;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-tags-wrap reveal-right">
+          <div class="skill-tags-title">Tools & Technologies</div>
+          <div class="skill-tags">
+            <span class="stag">JavaScript</span>
+            <span class="stag">Python</span>
+            <span class="stag">HTML5</span>
+            <span class="stag">CSS3</span>
+            <span class="stag">React.js</span>
+            <span class="stag">Django</span>
+            <span class="stag">Flask</span>
+            <span class="stag">Node.js</span>
+            <span class="stag">MySQL</span>
+            <span class="stag">MongoDB</span>
+            <span class="stag">Git & GitHub</span>
+            <span class="stag">REST APIs</span>
+            <span class="stag">Figma</span>
+            <span class="stag">SEO</span>
+            <span class="stag">Google Analytics</span>
+            <span class="stag">Pandas</span>
+          </div>
+          <div class="skill-highlight-cards">
+            <div class="shc">
+              <span class="shc-num">20+</span>
+              <span class="shc-label">Projects Delivered</span>
+            </div>
+            <div class="shc">
+              <span class="shc-num">5+</span>
+              <span class="shc-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section section-dark">
+    <div class="services-bg">
+      <div class="sb-blob sb3"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag light">Testimonials</span>
+        <h2>What Clients <span class="gradient-text">Say</span></h2>
+        <p>Real feedback from people I've worked with.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal featured-review" style="--delay:0.1s">
+          <div class="rv-quote">"</div>
+          <div class="rv-stars">★★★★★</div>
+          <p>"Prajeeth has been an incredible asset to our team! His ability to bring complex ideas to life with such
+            ease is unmatched. Not only does he produce high-quality work, but he also ensures that everything is
+            completed on time and within budget. <strong>Highly recommended!</strong>"</p>
+          <div class="rv-author">
+            <div class="rv-avatar" style="--ac:#7c3aed;">T</div>
+            <div>
+              <strong>Team Lead</strong>
+              <span>Project Collaborator</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal" style="--delay:0.2s">
+          <div class="rv-quote">"</div>
+          <div class="rv-stars">★★★★★</div>
+          <p>"Working with Prajeeth was an absolute pleasure. He not only delivered a website that was exactly what I
+            was looking for, but also provided invaluable insights into how to improve the user experience. His
+            attention to detail and professionalism exceeded my expectations."</p>
+          <div class="rv-author">
+            <div class="rv-avatar" style="--ac:#0ea5e9;">P</div>
+            <div>
+              <strong>Prakash</strong>
+              <span>Business Owner, E-commerce Website</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal" style="--delay:0.3s">
+          <div class="rv-quote">"</div>
+          <div class="rv-stars">★★★★★</div>
+          <p>"Prajeeth's skillset is impressive. He handled both the front-end and back-end development with ease. His
+            ability to integrate digital marketing strategies also helped us <strong>increase traffic and
+              reach</strong>. If you need a versatile developer who can do it all, Prajeeth is your guy!"</p>
+          <div class="rv-author">
+            <div class="rv-avatar" style="--ac:#10b981;">S</div>
+            <div>
+              <strong>Suresh</strong>
+              <span>Tech Startup</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal" style="--delay:0.4s">
+          <div class="rv-quote">"</div>
+          <div class="rv-stars">★★★★★</div>
+          <p>"Prajeeth is a talented and versatile developer who has consistently delivered high-quality work on time.
+            His keen eye for design and usability ensures the websites he builds are both functional and user-friendly.
+            <strong>Highly recommended</strong> for affordable and reliable web development."
+          </p>
+          <div class="rv-author">
+            <div class="rv-avatar" style="--ac:#f59e0b;">C</div>
+            <div>
+              <strong>Client Review</strong>
+              <span>Web Development Project</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Let's <span class="gradient-text">Work Together</span></h2>
+        <p>Have a project in mind? Reach out and let's build something amazing.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="ci-card">
+            <h3>Contact Details</h3>
+            <div class="ci-items">
+              <a href="mailto:sprajeeth72@gmail.com" class="ci-item" id="contact-email">
+                <div class="ci-icon-wrap" style="--cic:#7c3aed;">
+                  <span>📧</span>
+                </div>
+                <div>
+                  <strong>Email / GitHub</strong>
+                  <span>sprajeeth72@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://instagram.com/elite_hex" target="_blank" class="ci-item" id="contact-instagram">
+                <div class="ci-icon-wrap" style="--cic:#e1306c;">
+                  <span>📸</span>
+                </div>
+                <div>
+                  <strong>Instagram</strong>
+                  <span>@elite_hex</span>
+                </div>
+              </a>
+              <a href="https://wa.me/919514286733" target="_blank" class="ci-item" id="contact-whatsapp">
+                <div class="ci-icon-wrap" style="--cic:#25d366;">
+                  <span>💬</span>
+                </div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>+91 95142 86733</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="ci-availability">
+            <div class="avail-dot"></div>
+            <span>Currently available for new projects</span>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <h3>Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="name" placeholder="e.g. Rahul Kumar" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fservice">Service Needed</label>
+              <select id="fservice" name="service">
+                <option value="">Select a service...</option>
+                <option>Full-Stack Web Development</option>
+                <option>Responsive Web Design</option>
+                <option>Digital Marketing</option>
+                <option>Data Analysis</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Your Message</label>
+              <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="submitBtn">Send Message 🚀</button>
+            <div id="formSuccess" class="form-success" style="display:none;">✅ Message received! I'll get back to you
+              within 24 hours.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-box sm">P</span> Prajeeth</div>
+          <p>Full-stack developer crafting affordable, high-quality digital experiences. Let's build something great
+            together.</p>
+          <div class="footer-social">
+            <a href="mailto:sprajeeth72@gmail.com" class="fsoc-btn" aria-label="Email" id="footer-email">📧</a>
+            <a href="https://instagram.com/elite_hex" target="_blank" class="fsoc-btn" aria-label="Instagram"
+              id="footer-instagram">📸</a>
+            <a href="https://wa.me/919514286733" target="_blank" class="fsoc-btn" aria-label="WhatsApp"
+              id="footer-whatsapp">💬</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Full-Stack Dev</a></li>
+            <li><a href="#services">Responsive Design</a></li>
+            <li><a href="#services">Digital Marketing</a></li>
+            <li><a href="#services">Data Analysis</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li>📧 sprajeeth72@gmail.com</li>
+            <li>📸 @elite_hex</li>
+            <li>💬 +91 95142 86733</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Prajeeth. All rights reserved.</p>
+        <p>Designed & Developed with 💜 by Prajeeth</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
